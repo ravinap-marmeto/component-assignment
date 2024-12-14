@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Components Demo</title>
+
+    <!-- Link to Component CSS files -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="components/Card/Card.css" />
+    <link rel="stylesheet" href="components/InputField/InputField.css" />
+    <link rel="stylesheet" href="components/Button/Button.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Button Component Section -->
+        <h2>Custom Buttons</h2>
+        <div class="component-section flex gap-2 align-center">
+            <custom-button variant="primary" size="large" text="Primary Large"></custom-button>
+            <custom-button variant="secondary" size="medium" text="Secondary Medium"></custom-button>
+            <custom-button variant="disabled" size="small" text="Disabled Small"></custom-button>
+        </div>
+
+        <!-- Card Component Section -->
+        <h2>Custom Cards</h2>
+        <div class="component-section card-container flex gap-2">
+            <custom-card has-image="true"
+                image-src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591"
+                title="Card with Image" subtitle="This is a subtitle"
+                body="This card contains an image and some text."></custom-card>
+
+            <custom-card has-image="false" title="Card without Image" subtitle="Another subtitle"
+                body="This card does not include an image."></custom-card>
+            <custom-card has-image="true"
+                image-src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-holiday-watch-s10-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1729694064591"
+                title="Apple watch 10"
+                subtitle="All-new design. The thinnest Apple Watch ever, with our biggest display."
+                body="999 $"></custom-card>
+        </div>
+
+        <!-- Input Field Component Section -->
+        <!-- Input Field Component Section -->
+        <h2>Custom Input Fields</h2>
+        <div class="component-section flex gap-2">
+            <custom-input label="Your Name" placeholder="Enter your name here"
+                error-message="Name is required."></custom-input>
+
+            <custom-input type="email" label="Email Address" placeholder="Enter your email"
+                error-message="Invalid email format." success-message="Email verified"></custom-input>
+        </div>
+
+    </div>
+
+    <!-- Include Component JavaScript files -->
+    <script src="components/Button/Button.js"></script>
+    <script src="components/Card/Card.js"></script>
+    <script src="components/InputField/InputField.js"></script>
+</body>
+
+</html>

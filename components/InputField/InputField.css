@@ -1,0 +1,61 @@
+.custom-input {
+    margin: 10px 0;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.input-box:focus {
+    border-color: #005fcc;
+}
+
+.error .input-box {
+    border-color: red;
+}
+
+.error .error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error .input-box:focus {
+    border-color: darkred;
+}
+
+.focused .input-box {
+    border-color: #005fcc;
+}
+
+.error-message {
+    display: none;
+}
+
+.success-message {
+    display: none;
+    color: green;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.success .input-box {
+    border-color: green;
+}
+
+.success .success-message {
+    display: block;
+}
