@@ -22,7 +22,6 @@ body {
 }
 
 .component-section.card-container {
-    overflow: scroll;
     justify-content: center;
     padding: 1rem 0.5rem;
 }
@@ -51,6 +50,9 @@ h2 {
 @media screen and (max-width:749px) {
     .flex {
         flex-wrap: wrap;
+    }
+    .component-section.card-container {
+        overflow: scroll;
     }
 
 }

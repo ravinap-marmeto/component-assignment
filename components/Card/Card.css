@@ -32,7 +32,6 @@
 }
 
 .custom-card:hover {
-    /* transform: rotate(-1deg); */
     scale: 1.01;
     transition: ease-in-out 0.3s;
 }
